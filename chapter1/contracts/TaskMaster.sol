@@ -1,4 +1,4 @@
-pragma solidity ^0.4.17 <0.7.0;
+pragma solidity ^0.5.16;
 
 contract TaskMaster {
     // balances of everyone
@@ -7,7 +7,7 @@ contract TaskMaster {
     // owner of the contract
     address public owner;
 
-    constructor() {
+    constructor() public {
         owner = msg.sender;
         balances[msg.sender] = 10000;
     }

@@ -1,5 +1,5 @@
 var TaskMaster = artifacts.require("./TaskMaster.sol");
 
-export default function (deployer) {
+module.exports = function (deployer) {
 	deployer.deploy(TaskMaster);
 };
